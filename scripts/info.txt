@@ -1,1 +1,1 @@
-
+Contém os notebooks e scripts responsáveis pelo pipeline de ETL, análise exploratória de dados (EDA) e validação estatística das variáveis do processo a partir do dataset IoT real.
