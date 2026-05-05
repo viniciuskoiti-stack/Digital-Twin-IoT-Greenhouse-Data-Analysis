@@ -115,3 +115,50 @@ O grupo descartou orientações iniciais da ferramenta para gerar dados de atua�
 **C. Validação da Engenharia:**
 
 - Verificação lógica da exclusão de dados pelo método IQR.
+
+---
+
+### 10. Etapa 03 (M3) - Modelo Preditivo e Arquitetura de Decisão IA
+
+**Link do Protótipo (Google AI Studio):**  
+https://ai.studio/apps/d653c259-1129-46ca-b39a-37cc9c24b35f?fullscreenApplet=true
+
+**Código-Fonte:**  
+O script da lógica LLM (`logica_decisao_ia.py`) e o notebook com o treinamento matemático estão disponíveis na pasta `/scripts`.
+
+---
+
+#### 1. Arquitetura da Solução
+
+A solução foi estruturada em duas camadas para garantir rigor técnico e aplicabilidade industrial:
+
+- **Camada de Predição (Machine Learning):**  
+Treinamento de um modelo *Random Forest Regressor* com os dados reais pós-ETL da Etapa M2 para calcular matematicamente a biomassa (AWWGV).
+- **Camada de Decisão (IA Generativa):**  
+Implementada no Google AI Studio, atua como o cérebro interpretativo. Recebe a predição e as leituras dos sensores para gerar ações de controle estruturadas em formato JSON.
+
+---
+
+#### 2. Métricas do Modelo
+
+A validação no conjunto de teste comprovou a viabilidade da inferência indireta da biomassa vegetal, reduzindo a necessidade de sensores físicos invasivos:
+
+- **MAE (Erro Médio Absoluto):** 0.0083  
+- **RMSE (Raiz do Erro Quadrático Médio):** 0.0103  
+- **R² (Coeficiente de Determinação):** 99.82%
+
+---
+
+#### 3. Resultado Funcional
+
+O protótipo recebe os dados de telemetria (ALAP, ACHP, PHR) e retorna ESTRITAMENTE um objeto JSON contendo:
+
+1. Predição da biomassa vegetal (AWWGV)
+2. Diagnóstico técnico do estado da planta
+3. Ação recomendada para atuadores (ex: ajuste de setpoints de irrigação/iluminação)
+
+---
+
+#### Conclusão
+
+A Etapa M3 implementa um pipeline completo de ponta a ponta (dados → predição → decisão), alinhado com as arquiteturas reais de Indústria 4.0, sistemas ciberfísicos e Gêmeos Digitais para o agronegócio.
