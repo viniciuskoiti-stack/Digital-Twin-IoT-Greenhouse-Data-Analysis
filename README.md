@@ -273,7 +273,7 @@ Testes de estresse com injeção de ruído artificial (5%, 10% e 20%) nos sensor
 | Lucas Veiga | ACHP, PHR e ALAP | Stress Test e SHAP | [Notebook](notebooks/n1_individual/N1_Lucas_Veiga.ipynb) |
 | Yasmin Souza | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Yasmin.ipynb) |
 | Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Tifany.ipynb) |
-| Vinicius Koiti | ACHP, PHR, ALAP e ANPL | SHAP (Waterfall) e Estresse | [Notebook](notebooks/n1_individual/N1_Vinicius_Koiti.ipynb) |
+| Vinicius Koiti | ACHP, PHR, ALAP e ANPL | SHAP (Waterfall) e Stress | [Notebook](notebooks/n1_individual/N1_Vinicius_Koiti.ipynb) |
 
 * **Resumo dos Resultados (Vinicius Koiti):** Através de uma auditoria de XAI, identificou-se que o modelo possui um viés de ancoragem na variável Clorofila (ACHP). Testes de estresse revelaram que ruídos acima de 15% nos sensores causam uma degradação crítica na predição. A análise via SHAP isolou casos extremos, resultando em um plano de ação que sugere filtros digitais no CLP e redundância de sensores para mitigar falhas de leitura em cenários de estresse térmico.
 
