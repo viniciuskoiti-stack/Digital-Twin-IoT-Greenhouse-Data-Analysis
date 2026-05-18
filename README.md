@@ -190,7 +190,10 @@ Organização das pastas conforme o padrão profissional exigido:
 │   ├── M2_EDA.ipynb    # Etapa 2: Análise Exploratória e ETL
 │   ├── M3_ML.ipynb     # Etapa 3: Modelagem Inicial de Machine Learning
 │   ├── M4_Otimizacao.ipynb # Etapa 4: Refinamento, GridSearch e Cross-Validation
-│   └── n1_individual/  # Diretório para os testes estatísticos de cada integrante
+│   └── n1_individual/  # Diretório para os testes individuais (N1)
+│       ├── Aprofundamento_Estatistico_Vinicius_Koiti.ipynb  # Teste de Hipóteses e Inferência (Vinicius)
+│       ├── N1_Vinicius_Koiti.ipynb                          # Auditoria de Robustez e SHAP (Vinicius)
+│       └── N1_Lucas_Veiga.ipynb                             # Auditoria de Robustez e SHAP (Lucas)
 │
 ├── scripts/            # Código-fonte principal de produção (Scripts .py)
 │   ├── etl.py          # Script isolado para processamento de dados
