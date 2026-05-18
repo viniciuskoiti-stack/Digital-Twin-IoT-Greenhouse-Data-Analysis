@@ -245,15 +245,37 @@ python scripts/logica_decisao_ia.py
 
 ---
 
-# 🧪 10. N1 Individual — Aprofundamento Estatístico
+# 🧪 10. Entregas Individuais (Estatística, Robustez e XAI)
 
-| Integrante | Variável | Teste Estatístico | Link |
-|---|---|---|---|
-| Jhuan Henrique | [PREENCHER] | [PREENCHER] | notebooks/n1_individual/arq1.ipynb |
-| Lucas Veiga | [ACHP, PHR e ALAP] | [Stress Test] | notebooks/n1_individual/N1_Lucas_Veiga.ipynb |
-| Yasmin Souza | [PREENCHER] | [PREENCHER] | notebooks/n1_individual/arq3.ipynb |
-| Tifany Mariane | [PREENCHER] | [PREENCHER] | notebooks/n1_individual/arq4.ipynb |
-| Vinicius Koiti | [PREENCHER] | [PREENCHER] | notebooks/n1_individual/arq5.ipynb |
+Esta seção centraliza as contribuições e investigações técnicas realizadas individualmente por cada membro do grupo, divididas entre a validação estatística inferencial e a auditoria de robustez dos modelos de IA.
+
+## 10.1 — Aprofundamento Estatístico (Inferência)
+Validação das hipóteses de correlação levantadas na etapa exploratória (EDA), aplicando testes de normalidade (Shapiro-Wilk) e testes de hipóteses paramétricos/não-paramétricos.
+
+| Integrante | Variável Analisada | Teste Estatístico Realizado | Link do Notebook |
+| :--- | :--- | :--- | :--- |
+| Jhuan Henrique | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Jhuan.ipynb) |
+| Lucas Veiga | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Lucas.ipynb) |
+| Yasmin Souza | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Yasmin.ipynb) |
+| Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Tifany.ipynb) |
+| Vinicius Koiti | ACHP x Biomassa | Mann-Whitney e d de Cohen | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Vinicius_Koiti.ipynb) |
+
+* **Resumo dos Resultados (Vinicius Koiti):** Validou-se estatisticamente que o nível de Clorofila (ACHP) dita a dinâmica de ganho de biomassa úmida (AWWGV). O teste de Shapiro-Wilk rejeitou a normalidade das amostras (p-valor < 0.05), justificando a aplicação do teste não-paramétrico de Mann-Whitney. A hipótese nula (H0) foi rejeitada com p-valor próximo de zero, e o cálculo do tamanho do efeito (Cohen's d = 1.70) confirmou uma relevância prática "gigante" da variável para o negócio agrícola.
+
+---
+
+## 10.2 — Auditoria de Robustez e Interpretabilidade (XAI)
+Testes de estresse com injeção de ruído artificial (5%, 10% e 20%) nos sensores principais, análise de resíduos das maiores falhas e aplicação da biblioteca SHAP para interpretabilidade local (Casos de Sucesso vs. Falha).
+
+| Integrante | Sensores Testados | Algoritmo de Explicabilidade | Link do Notebook |
+| :--- | :--- | :--- | :--- |
+| Jhuan Henrique | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Jhuan.ipynb) |
+| Lucas Veiga | ACHP, PHR e ALAP | Stress Test e SHAP | [Notebook](notebooks/n1_individual/N1_Lucas_Veiga.ipynb) |
+| Yasmin Souza | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Yasmin.ipynb) |
+| Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Tifany.ipynb) |
+| Vinicius Koiti | ACHP, PHR, ALAP e ANPL | SHAP (Waterfall) e Estresse | [Notebook](notebooks/n1_individual/N1_Vinicius_Koiti.ipynb) |
+
+* **Resumo dos Resultados (Vinicius Koiti):** Através de uma auditoria de XAI, identificou-se que o modelo possui um viés de ancoragem na variável Clorofila (ACHP). Testes de estresse revelaram que ruídos acima de 15% nos sensores causam uma degradação crítica na predição. A análise via SHAP isolou casos extremos, resultando em um plano de ação que sugere filtros digitais no CLP e redundância de sensores para mitigar falhas de leitura em cenários de estresse térmico.
 
 ---
 
