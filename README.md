@@ -260,7 +260,7 @@ Validação das hipóteses de correlação levantadas na etapa exploratória (ED
 | Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Tifany.ipynb) |
 | Vinicius Koiti | ACHP x Biomassa | Mann-Whitney e d de Cohen | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Vinicius_Koiti.ipynb) |
 
-* **Resumo dos Resultados (Vinicius Koiti):** Validou-se estatisticamente que o nível de Clorofila (ACHP) dita a dinâmica de ganho de biomassa úmida (AWWGV). O teste de Shapiro-Wilk rejeitou a normalidade das amostras (p-valor < 0.05), justificando a aplicação do teste não-paramétrico de Mann-Whitney. A hipótese nula (H0) foi rejeitada com p-valor próximo de zero, e o cálculo do tamanho do efeito (Cohen's d = 1.70) confirmou uma relevância prática "gigante" da variável para o negócio agrícola.
+* **Resumo dos Resultados (Vinicius Koiti):** Validou-se estatisticamente que o nível de Clorofila (ACHP) influencia significativamente a biomassa úmida. O teste de Shapiro-Wilk rejeitou a normalidade das amostras (p-valor < 0.05), justificando o uso do teste de Mann-Whitney, que rejeitou a hipótese nula (H0) com p-valor < 0.001. O Tamanho do Efeito (Cohen's d = 0.73) confirmou uma relevância prática de magnitude média-alta, validando a Clorofila como um dos principais preditores para o Gêmeo Digital.
 
 ---
 
