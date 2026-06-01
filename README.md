@@ -257,10 +257,6 @@ Validação das hipóteses de correlação levantadas na etapa exploratória (ED
 
 | Integrante | Variável Analisada | Teste Estatístico Realizado | Link do Notebook |
 | :--- | :--- | :--- | :--- |
-| Jhuan Henrique | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Jhuan.ipynb) |
-| Lucas Veiga | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Lucas.ipynb) |
-| Yasmin Souza | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Yasmin.ipynb) |
-| Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Tifany.ipynb) |
 | Vinicius Koiti | ACHP x Biomassa | Mann-Whitney e d de Cohen | [Notebook](notebooks/n1_individual/Aprofundamento_Estatistico_Vinicius_Koiti.ipynb) |
 
 * **Resumo dos Resultados (Vinicius Koiti):** Validou-se estatisticamente que o nível de Clorofila (ACHP) influencia significativamente a biomassa úmida. O teste de Shapiro-Wilk rejeitou a normalidade das amostras (p-valor < 0.05), justificando o uso do teste de Mann-Whitney, que rejeitou a hipótese nula (H0) com p-valor < 0.001. O Tamanho do Efeito (Cohen's d = 0.73) confirmou uma relevância prática de magnitude média-alta, validando a Clorofila como um dos principais preditores para o Gêmeo Digital.
@@ -272,10 +268,7 @@ Testes de estresse com injeção de ruído artificial (5%, 10% e 20%) nos sensor
 
 | Integrante | Sensores Testados | Algoritmo de Explicabilidade | Link do Notebook |
 | :--- | :--- | :--- | :--- |
-| Jhuan Henrique | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Jhuan.ipynb) |
 | Lucas Veiga | ACHP, PHR e ALAP | Stress Test e SHAP | [Notebook](notebooks/n1_individual/N1_Lucas_Veiga.ipynb) |
-| Yasmin Souza | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Yasmin.ipynb) |
-| Tifany Mariane | [PREENCHER] | [PREENCHER] | [Notebook](notebooks/n1_individual/N1_Tifany.ipynb) |
 | Vinicius Koiti | ACHP, PHR, ALAP e ANPL | SHAP (Waterfall) e Stress | [Notebook](notebooks/n1_individual/N1_Vinicius_Koiti.ipynb) |
 
 * **Resumo dos Resultados (Vinicius Koiti):** Através de uma auditoria de XAI, identificou-se que o modelo possui um viés de ancoragem na variável Clorofila (ACHP). Testes de estresse revelaram que ruídos acima de 15% nos sensores causam uma degradação crítica na predição. A análise via SHAP isolou casos extremos, resultando em um plano de ação que sugere filtros digitais no CLP e redundância de sensores para mitigar falhas de leitura em cenários de estresse térmico.
