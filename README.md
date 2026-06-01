@@ -279,7 +279,7 @@ Testes de estresse com injeção de ruído artificial (5%, 10% e 20%) nos sensor
 
 ## Pitch e Demonstração (2–3 min)
 
-[COLE_AQUI_O_LINK_DO_VIDEO]
+https://youtu.be/rjRFCXLw3Og
 
 O vídeo apresenta:
 
